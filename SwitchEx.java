@@ -2,7 +2,6 @@ public class SwitchEx {
         public static void main(String[] args){
     
             String dayName;
-            //int initialCalories = 1500;
             int newCalories = 1500;
     
             for(int i=1; i<=7; i++){
@@ -41,7 +40,7 @@ public class SwitchEx {
     
                 case 7:
                 dayName = "Sunday";
-                newCalories = 1500;
+                newCalories = newCalories + 100;
                     break; 
     
                 default:
