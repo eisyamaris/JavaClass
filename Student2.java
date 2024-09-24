@@ -20,9 +20,15 @@ public class Student2 {
 
     public double calculateAverage() {
         int total = 0;
-        for (int score : scores) {
+        int score = 0;
+
+        for(int i = 0; i<scores.length; i++){
             total = total + score;
         }
+
+        /*for (int score : scores) {
+            total = total + score;
+        }*/
         averageScore = total / 3;
         return averageScore;
     }
@@ -52,12 +58,13 @@ public class Student2 {
         students[3] = new Student2("Jazli", new int[]{65, 60, 72});
         students[4] = new Student2("Jufri", new int[]{55, 48, 62});
 
-        for (Student2 student : students) {
-            double average = student.calculateAverage();
-            char grade = student.assignGrade();
-            
+        for(int i = 0; i<students.length; i++){
+        /*for (Student2 student : students) {*/
+            double average = students[i].calculateAverage();
+            char grade = students[i].assignGrade();
+
             System.out.println("\n");
-            System.out.println("Name:" + student.getName());
+            System.out.println("Name:" + students[i].getName());
             System.out.println("Average Score: " + average);
             System.out.println("Grade: " + grade);
         }
