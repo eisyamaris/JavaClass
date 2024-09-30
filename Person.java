@@ -1,7 +1,7 @@
 public class Person {
-    private double firstGPA = 3.2;
-    private double secondGPA = 3.1;
-    private double thirdGPA = 3.4;
+    private double firstGPA;
+    private double secondGPA;
+    private double thirdGPA;
 
 
     public Person(double firstGPA, double secondGPA, double thirdGPA){
